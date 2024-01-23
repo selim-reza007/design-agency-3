@@ -18,6 +18,10 @@ body {
     margin: 0 auto;
 }
 
+.header {
+    padding-top: 1.25em;
+}
+
 .header .header-top {
     display: grid;
     grid-template-columns: 1fr;
@@ -106,17 +110,20 @@ body {
     position: absolute;
     top: 0;
     left: -100%;
+    /* left: 0; */
     width: 100%;
     height: 100%;
     z-index: 100;
     transition: all 0.5s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header .header-bottom .mobile-menubar .menu-options ul {
     list-style: none;
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 50px;
 }
 
 .header .header-bottom .mobile-menubar .menu-options ul li {
@@ -131,11 +138,40 @@ body {
 }
 
 .header .header-bottom .mobile-menubar .menu-options ul li:first-child {
-    margin-bottom: 25vh;
-    text-align: end;
-    padding-right: 50px;
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
 }
 
+.header .header-bottom .mobile-menubar .menu-options ul li.second-child {
+    margin-top: 25vh;
+}
+
+/* last button code */
+.header .header-bottom .mobile-menubar .menu-options>a {
+    display: flex;
+    gap: 1.25em;
+    padding: 1.3em 1.875em;
+    text-decoration: none;
+    color: #131839;
+    font-size: 1.5rem;
+    width: max-content;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF6138;
+    transition: all 0.5s linear;
+}
+
+.header .header-bottom .mobile-menubar .menu-options>a:hover {
+    background-color: #fd3908;
+}
+
+
+/* last button code */
+
+.header .header-bottom .desktop-menubar {
+    display: none;
+}
 
 @media (min-width: 568px) {
 
@@ -170,6 +206,66 @@ body {
     .header .wrapper .third-header-top {
         justify-self: self-start;
     }
+
+    .header .horizontal-line {
+        height: 1px;
+        background: rgba(19, 24, 57, 0.08);
+        margin-top: 1.25em;
+    }
+
+    .header .header-bottom .mobile-menubar {
+        display: none;
+    }
+
+    .header .header-bottom .desktop-menubar {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .header .header-bottom .desktop-menubar .desktop-menu-options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .header-bottom .desktop-menubar ul {
+        list-style: none;
+        display: flex;
+        gap: 1.875em;
+    }
+
+    /* .header .header-bottom .desktop-menubar ul li {} */
+
+    .header .header-bottom .desktop-menubar ul li a {
+        text-decoration: none;
+        color: #131839;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    /* last button code */
+    .header .header-bottom .desktop-menubar .desktop-menu-options>a {
+        background-color: #FF6138;
+        display: flex;
+        gap: 1.25em;
+        padding: 1.3em 1.875em;
+        text-decoration: none;
+        color: #131839;
+        transition: all 0.5s linear;
+    }
+
+    .header .header-bottom .desktop-menubar .desktop-menu-options>a:hover {
+        background-color: #fd3908;
+    }
+
+    .header .header-bottom .desktop-menubar .desktop-menu-options>a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* last button code */
 }
 
 @media (min-width: 1250px) {
