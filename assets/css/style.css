@@ -10,6 +10,7 @@ body {
     background-color: #fff;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
+    height: 100%;
 }
 
 .wrapper {
@@ -33,6 +34,7 @@ body {
     display: flex;
     align-items: end;
     gap: 1em;
+    text-decoration: none;
 }
 
 .header .header-top .first-header-top p {
@@ -40,6 +42,11 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 2.125rem;
     font-weight: 700;
+    transition: all 0.3s linear;
+}
+
+.header .header-top .first-header-top:hover p {
+    color: #FF6138;
 }
 
 .header .header-top .second-header-top {
@@ -173,6 +180,197 @@ body {
     display: none;
 }
 
+/* hero */
+.hero {
+    background: url("./../images/new l.png");
+    height: 100vh;
+    max-height: 939px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover cover;
+}
+
+.hero .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    gap: 4.5em;
+    text-align: center;
+}
+
+.hero .text-container p {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.hero .text-container h1 {
+    color: #FFF;
+    font-size: 6.313rem;
+    font-weight: 700;
+    line-height: 94px;
+    white-space: pre-line;
+    text-transform: uppercase;
+}
+
+.hero .btn-container {
+    display: flex;
+    gap: 1.563em;
+}
+
+.hero .btn-container .discover {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 0.0em 1.875em;
+    background-color: #FF6138;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+
+.hero .btn-container .discover:hover {
+    background: #fd3908;
+}
+
+.hero .btn-container .contact {
+    text-decoration: none;
+    display: flex;
+}
+
+.hero .btn-container .contact .orange-volor {
+    width: 6px;
+    background: #FF6138;
+}
+
+.hero .btn-container .contact .contac-us {
+    display: flex;
+    padding: 1em 1.875em 1em 1.6em;
+    background: #fff;
+    gap: 1em;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+
+.hero .btn-container .contact .contac-us:hover {
+    background: #ddddf5;
+}
+
+.hero .btn-container .contact .contac-us p {
+    color: #131839;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+/* hero end */
+
+/* service  */
+
+.service {
+    padding: 0px 0 100px 0;
+}
+
+.service .service-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* row-gap: 60px; */
+}
+
+.service .service-card-container>div {
+    border-bottom: 1px solid rgba(19, 24, 57, 0.15);
+    padding: 100px 0;
+}
+
+.service .service-card-container>div:last-child {
+    border-bottom: none;
+}
+
+
+.service .first-service .about-us {
+    color: #FF6138;
+    /* text-align: center; */
+    font-size: 1.125rem;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.service .first-service h2 {
+    color: #131839;
+    font-size: 2.813rem;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin-top: 14px;
+    margin-bottom: 42px;
+}
+
+.service .first-service button {
+    width: 165px;
+    height: 54px;
+    background: #FF6138;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.service .first-service button:hover {
+    background: #fd3908;
+}
+
+.service .service-card h4 {
+    color: #131839;
+    font-size: 1.5rem;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.service .service-card p {
+    color: #131839;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 28px;
+}
+
+.service .service-card>div {
+    display: flex;
+    align-items: center;
+    gap: 0.625em;
+}
+
+.service .service-card a {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.938rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s linear;
+}
+
+.service .service-card a:hover {
+    color: #FF6138;
+}
+
+
+.service .horizontal-line {
+    height: 1px;
+    background-color: rgba(19, 24, 57, 0.15); ;
+}
+/* 1px solid */
+
+/* service end */
+
 @media (min-width: 568px) {
 
     .header .header-top .second-header-top {
@@ -186,6 +384,32 @@ body {
         height: 25px;
         background: rgba(19, 24, 57, 0.19);
     }
+}
+
+@media (min-width: 750px) {
+    .service .service-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0px;
+    }
+
+    .service .service-card-container .service-card.our-mission {
+        padding-right: 25px;
+    }
+
+    .service .service-card-container .service-card.our-vision {
+        padding-left: 25px;
+    }
+
+    .service .service-card-container .first-service {
+        grid-column: span 2;
+    }
+
+    .service .service-card-container .our-mission {
+        border-bottom: none;
+        border-right: 1px solid rgba(19, 24, 57, 0.15);
+    }
+
 }
 
 @media (min-width: 864px) {
@@ -243,6 +467,11 @@ body {
         font-weight: 600;
         line-height: 30px;
         text-transform: uppercase;
+        transition: all 0.5s linear;
+    }
+
+    .header .header-bottom .desktop-menubar ul li a:hover {
+        color: #FF6138;
     }
 
     /* last button code */
@@ -266,6 +495,34 @@ body {
     }
 
     /* last button code */
+
+}
+
+@media (min-width: 1000px) {
+    .service .service-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 60px;
+    }
+
+    .service .service-card-container .first-service {
+        grid-column: span 1;
+        border-right: 1px solid rgba(19, 24, 57, 0.15);
+        padding-right: 25px;
+    }
+
+    .service .service-card-container .our-mission {
+        padding-left: 25px;
+    }
+
+    .service .service-card-container .our-vision {
+        padding-right: 25px;
+    }
+
+    .service .service-card-container>div {
+        border-bottom: none;
+    }
+    
 }
 
 @media (min-width: 1250px) {
