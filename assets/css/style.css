@@ -365,11 +365,131 @@ body {
 
 .service .horizontal-line {
     height: 1px;
-    background-color: rgba(19, 24, 57, 0.15); ;
+    background-color: rgba(19, 24, 57, 0.15);
+    ;
 }
-/* 1px solid */
 
 /* service end */
+/* faq */
+.faq {
+    background: #F2F2F4;
+    position: relative;
+    padding-top: 76px;
+    min-height: 100vh;
+}
+
+.faq .left-container .top-left .heading-container {
+    /* background-color: #555; */
+    text-align: center;
+}
+
+.faq .left-container .top-left .heading-container p {
+    color: #FF6138;
+    font-size: 1.125rem;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.faq .left-container .top-left .heading-container h2 {
+    color: #131839;
+    font-size: 2.813rem;
+    line-height: 45px;
+    text-transform: uppercase;
+    white-space: pre-line;
+    margin-bottom: 1em;
+}
+
+.faq .left-container .top-left .accordion-container .signle-choice {
+    margin-bottom: 2.8em;
+}
+
+.faq .left-container .top-left .accordion-container .vcollapse-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 1em 1.1em 1em 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.faq .left-container .top-left .accordion-container .vcollapse-toggle p {
+    color: #131839;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.faq .left-container .top-left .accordion-container .vcollapse-content p {
+    color: rgba(85, 85, 85, 0.80);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.cc-open {
+    color: #FF6138;
+}
+
+.appear {
+    display: none;
+}
+
+.faq .left-container .bottom-left {
+    background: #131839;
+}
+
+.faq .left-container .bottom-left .wrapper {
+    display: flex;
+    padding: 55px 0 35px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq .left-container .bottom-left .stat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.faq .left-container .bottom-left .stat:last-child {
+    transform: translateX(10px);
+}
+
+.faq .left-container .bottom-left .stat h2 {
+    color: #FF6138;
+    font-size: 4rem;
+    line-height: 30px;
+}
+
+.faq .left-container .bottom-left .stat .border-left {
+    width: 2px;
+    height: 36px;
+    background: #FFF;
+}
+
+.faq .left-container .bottom-left .stat p {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+
+.faq .right-img-container img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/* faq end */
 
 @media (min-width: 568px) {
 
@@ -383,6 +503,35 @@ body {
         width: 1px;
         height: 25px;
         background: rgba(19, 24, 57, 0.19);
+    }
+}
+
+@media (min-width: 719px) {
+
+    .faq .left-container .top-left .heading-container {
+        text-align: start;
+    }
+
+    .faq .accordion-container {
+        width: 70%;
+        padding-right: 40px;
+    }
+
+    .faq .left-container .bottom-left .wrapper {
+        padding-right: 250px;
+    }
+
+    .faq .right-img-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 30%;
+    }
+
+    .faq .right-img-container img {
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -409,6 +558,7 @@ body {
         border-bottom: none;
         border-right: 1px solid rgba(19, 24, 57, 0.15);
     }
+
 
 }
 
@@ -495,7 +645,6 @@ body {
     }
 
     /* last button code */
-
 }
 
 @media (min-width: 1000px) {
@@ -522,7 +671,19 @@ body {
     .service .service-card-container>div {
         border-bottom: none;
     }
-    
+
+    .faq .left-container .bottom-left .wrapper {
+        padding-right: 350px;
+    }
+
+}
+
+@media (min-width: 1048px) {
+    .faq .left-container .bottom-left .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 29%;
+    }
 }
 
 @media (min-width: 1250px) {
@@ -548,5 +709,26 @@ body {
     .header .header-top .second-header-top {
         grid-column: span 1;
         justify-self: center;
+    }
+
+    .faq .left-container .bottom-left .wrapper {
+        padding-right: 35%;
+    }
+}
+
+@media (min-width: 1700px) {
+    .faq .left-container .bottom-left .wrapper {
+        padding-right: 25%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .faq {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .faq .left-container .bottom-left .wrapper {
+        padding-right: 20%;
     }
 }

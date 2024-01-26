@@ -185,8 +185,111 @@
     </section>
     <!-- services end -->
 
-    <script src="assets/js/main.js"></script>
+    <div class="faq">
 
+
+        <div class="left-container">
+
+            <div class="top-left">
+                <div class="wrapper">
+                    <div class="heading-container">
+                        <p>faq</p>
+                        <h2>A frequently asked
+                            questions</h2>
+                    </div>
+                    <div class="accordion-container">
+
+                        <div class="example">
+                            <!-- first -->
+                            <div class="signle-choice">
+                                <div class="vcollapse-toggle cc1" data-target="#cc1">
+                                    <p>How was the process carried out?</p>
+                                    <i class="fa-solid fa-chevron-down cc-open"></i>
+                                    <i class="fa-solid fa-chevron-left cc-close"></i>
+                                </div>
+                                <div class="vcollapse-content" id="cc1">
+                                    <p>maximus a augue. Nullam ante nunc, porttitor tempor epharetra in lorem. Nullam
+                                        fringill sem ealiquam suscipit ligula tellus lorem accompanied by English
+                                        versions
+                                        modesentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+                                </div>
+                            </div>
+                            <!-- first end -->
+                            <!-- second -->
+                            <div class="signle-choice">
+                                <div class="vcollapse-toggle cc2" data-target="#cc2">
+                                    <p>Do we really need a business plan?</p>
+                                    <i class="fa-solid fa-chevron-down cc-open"></i>
+                                    <i class="fa-solid fa-chevron-left cc-close"></i>
+                                </div>
+                                <div class="vcollapse-content" id="cc2">
+                                    <p>maximus a augue. Nullam ante nunc, porttitor tempor epharetra in lorem. Nullam
+                                        fringill sem ealiquam suscipit ligula tellus lorem accompanied by English
+                                        versions
+                                        modesentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                                </div>
+                            </div>
+                            <!-- second end -->
+                            <!-- third -->
+                            <div class="signle-choice">
+                                <div class="vcollapse-toggle cc3" data-target="#cc3">
+                                    <p>Waht makes your financial projects</p>
+                                    <i class="fa-solid fa-chevron-down cc-open"></i>
+                                    <i class="fa-solid fa-chevron-left cc-close"></i>
+                                </div>
+                                <div class="vcollapse-content" id="cc3">
+                                    <p>maximus a augue. Nullam ante nunc, porttitor tempor epharetra in lorem. Nullam
+                                        fringill sem ealiquam suscipit ligula tellus lorem accompanied by English
+                                        versions
+                                        modesentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                                </div>
+                            </div>
+                            <!-- third end -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-left">
+                <div class="wrapper">
+                    <div class="stat">
+                        <h2> 9.28%</h2>
+                        <div class="border-left"></div>
+                        <p>Increase in  
+                            montly</p>
+                    </div>
+                    <div class="stat">
+                        <h2>5.66%</h2>
+                        <div class="border-left"></div>
+                        <p>Market Down
+                            Yearly</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-img-container">
+            <img src="assets/images/faq-img.png" alt="faq image">
+        </div>
+
+
+    </div>
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/vcollapse.js"></script>
+    <script>
+        $('.example').vCollapse({
+            'any': true,
+            'onLoad': 5,
+            'speed': 300,
+            'easing': 'ease-in-out',
+            'autoScroll': true,
+        })
+    </script>
 </body>
 
 </html>
