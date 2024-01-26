@@ -210,7 +210,7 @@ body {
 
 .hero .text-container h1 {
     color: #FFF;
-    font-size: 6.313rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 94px;
     white-space: pre-line;
@@ -235,6 +235,7 @@ body {
     background-color: #FF6138;
     align-items: center;
     transition: all 0.5s linear;
+    font-size: 14px;
 }
 
 .hero .btn-container .discover:hover {
@@ -487,7 +488,7 @@ body {
 .faq .left-container .top-left .accordion-container .vcollapse-toggle p {
     color: #131839;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 30px;
     text-transform: uppercase;
@@ -515,7 +516,7 @@ body {
 
 .faq .left-container .bottom-left .wrapper {
     display: flex;
-    padding: 55px 0 35px 0;
+    padding: 3.4em 0;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -562,6 +563,190 @@ body {
 
 /* faq end */
 
+/* footer */
+.footer {
+    background: #F2F2F4;
+}
+
+/* .footer .first-div {
+    
+} */
+
+.footer .wrapper {
+    padding-top: 6em;
+    padding-bottom: 5em;
+    display: grid;
+    justify-content: center;
+    row-gap: 60px;
+}
+
+.footer .first-div .first-div-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.875em;
+}
+
+.footer .first-div .first-div-logo p {
+    color: #131839;
+    font-family: 'Nunito', sans-serif;
+    font-size: 34px;
+    line-height: 80px;
+}
+
+.footer .first-div>p {
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    white-space: pre-line;
+}
+
+.footer .first-div form .form-field-container {
+    display: flex;
+    gap: 0;
+    max-width: 350px;
+    /* margin-top: 25px; */
+}
+
+.footer .first-div form input {
+    width: 100%;
+    padding: 7px 7px 7px 14px;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 30px;
+    border: none;
+}
+
+.footer .first-div form button {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    background: #131839;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.footer .first-div form button:hover {
+    background: #262730;
+}
+
+.footer .second-div {
+    display: grid;
+    row-gap: 40px;
+    justify-self: center;
+}
+
+.footer .second-div .quick-link h4 {
+    color: #131839;
+    font-size: 1.25rem;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-bottom: 0.625em;
+}
+
+.footer .second-div .quick-link ul {
+    list-style-position: inside;
+}
+
+.footer .second-div .quick-link ul a {
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 43px;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.footer .second-div .quick-link ul a:hover {
+    color: #FF6138;
+}
+
+
+.footer .third-div h4 {
+    color: #131839;
+    font-size: 1.25rem;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-bottom: 0.625em;
+}
+
+.footer .third-div .bottom-contact-us .bottom-location {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer .third-div .bottom-contact-us .bottom-location.l-top {
+    margin-bottom: 1.5em;
+}
+
+.footer .third-div .bottom-contact-us .bottom-location.l-bottom {
+    margin-bottom: 2em;
+}
+
+.footer .third-div .bottom-contact-us .bottom-location p {
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+.footer .third-div .third-header-top a {
+    color: #000;
+}
+
+.footer .third-div .third-header-top {
+    display: flex;
+    gap: 10px;
+}
+
+.footer .third-div .third-header-top a i {
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.footer .third-div .third-header-top a i:hover {
+    background: #FF6138;
+    color: #fff;
+}
+
+/* footer end */
+
+@media (min-width: 450px) {
+
+    /* .footer .wrapper {
+        justify-content: start;
+    } */
+
+    .footer .second-div {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    .footer .second-div .q-three {
+        grid-column: span 2;
+        justify-self: center;
+    }
+}
+
 @media (min-width: 568px) {
 
     .header .header-top .second-header-top {
@@ -574,6 +759,22 @@ body {
         width: 1px;
         height: 25px;
         background: rgba(19, 24, 57, 0.19);
+    }
+
+
+    .footer .first-div,
+    .footer .third-div {
+        justify-self: center;
+    }
+
+    .footer .second-div {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 0px;
+        column-gap: 20px;
+    }
+
+    .footer .second-div .q-three {
+        grid-column: span 1;
     }
 }
 
@@ -620,6 +821,7 @@ body {
     .case-study .top-section .category-container ul {
         grid-template-columns: max-content max-content max-content max-content;
     }
+
 }
 
 @media (min-width: 750px) {
@@ -646,7 +848,32 @@ body {
         border-right: 1px solid rgba(19, 24, 57, 0.15);
     }
 
+    .footer .wrapper {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+    }
 
+    .footer .first-div {
+        order: 1;
+        justify-self: end;
+    }
+
+    .footer .second-div {
+        order: 3;
+        grid-column: span 2;
+    }
+
+    .footer .third-div {
+        order: 2;
+        justify-self: center;
+    }
+
+    .footer .first-div,
+    .footer .second-div,
+    .footer .third-div {
+        /* outline: 1px solid red; */
+        justify-self: stretch;
+    }
 }
 
 @media (min-width: 864px) {
@@ -695,8 +922,6 @@ body {
         gap: 1.875em;
     }
 
-    /* .header .header-bottom .desktop-menubar ul li {} */
-
     .header .header-bottom .desktop-menubar ul li a {
         text-decoration: none;
         color: #131839;
@@ -740,9 +965,14 @@ body {
         height: 440px;
         grid-auto-rows: 210px;
     }
+
+    
+
 }
 
 @media (min-width: 1000px) {
+
+
     .service .service-card-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -771,13 +1001,42 @@ body {
         padding-right: 350px;
     }
 
+
 }
 
 @media (min-width: 1048px) {
+
+    .header .header-top {
+        grid-template-columns: 1fr 3fr 1fr;
+        column-gap: 1.5em;
+        align-items: center;
+    }
+
+    .header .header-top .first-header-top {
+        grid-column: span 1;
+    }
+
+    .header .header-top .second-header-top {
+        grid-column: span 1;
+        gap: 2em;
+    }
+
+
     .faq .left-container .bottom-left .wrapper {
         flex-direction: row;
         justify-content: space-between;
         padding-right: 29%;
+    }
+
+    /* .footer .first-div,
+    .footer .second-div,
+    .footer .third-div {
+        outline: 1px solid red;
+        justify-self: stretch;
+    } */
+
+    .footer .second-div {
+        /* justify-self: stretch; */
     }
 }
 
@@ -789,12 +1048,11 @@ body {
     }
 
     .header .header-top .first-header-top {
-        grid-column: span 1;
         justify-self: start;
     }
 
     .header .header-top .second-header-top {
-        grid-column: span 1;
+        gap: 2.5em;
         justify-self: start;
     }
 
@@ -802,6 +1060,29 @@ body {
         height: 560px;
         grid-auto-rows: 270px;
     }
+
+    .footer .wrapper {
+        grid-template-columns: 1fr 2fr 1fr;
+        column-gap: 80px;
+    }
+
+    .footer .second-div {
+        grid-column: span 1;
+    }
+
+    .footer .first-div {
+        order: 1;
+    }
+
+    .footer .second-div {
+        order: 2;
+    }
+
+    .footer .third-div {
+        order: 3;
+    }
+
+
 }
 
 @media (min-width: 1357px) {
@@ -814,6 +1095,8 @@ body {
     .faq .left-container .bottom-left .wrapper {
         padding-right: 35%;
     }
+
+
 }
 
 @media (min-width: 1700px) {
@@ -837,5 +1120,10 @@ body {
 
     .faq .left-container .bottom-left .wrapper {
         padding-right: 20%;
+    }
+
+    .footer {
+        max-width: 1920px;
+        margin: 0 auto;
     }
 }
