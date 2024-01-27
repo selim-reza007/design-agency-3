@@ -41,7 +41,6 @@ body {
     color: #131839;
     font-family: 'Nunito', sans-serif;
     font-size: 2.125rem;
-    font-weight: 700;
     transition: all 0.3s linear;
 }
 
@@ -140,7 +139,6 @@ body {
 .header .header-bottom .mobile-menubar .menu-options ul li a {
     text-decoration: none;
     color: #000;
-    font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
 }
 
@@ -202,8 +200,7 @@ body {
 
 .hero .text-container p {
     color: #FFF;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.5rem;  
     line-height: 30px;
     text-transform: uppercase;
 }
@@ -211,7 +208,6 @@ body {
 .hero .text-container h1 {
     color: #FFF;
     font-size: 3.5rem;
-    font-weight: 700;
     line-height: 94px;
     white-space: pre-line;
     text-transform: uppercase;
@@ -220,6 +216,7 @@ body {
 .hero .btn-container {
     display: flex;
     gap: 1.563em;
+    flex-direction: column;
 }
 
 .hero .btn-container .discover {
@@ -228,14 +225,12 @@ body {
     align-items: center;
     gap: 1.25rem;
     text-decoration: none;
-    font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
-    padding: 0.0em 1.875em;
+    padding: 1.0em 1.875em;
     background-color: #FF6138;
     align-items: center;
     transition: all 0.5s linear;
-    font-size: 14px;
 }
 
 .hero .btn-container .discover:hover {
@@ -732,9 +727,14 @@ body {
 
 @media (min-width: 450px) {
 
-    /* .footer .wrapper {
-        justify-content: start;
-    } */
+    
+    .hero .text-container h1 {
+        font-size: 5rem;
+    }
+
+    .hero .btn-container {
+        flex-direction: row;
+    }
 
     .footer .second-div {
         grid-template-columns: 1fr 1fr;
@@ -958,6 +958,9 @@ body {
 
     /* last button code */
 
+    .hero .text-container h1 {
+        font-size: 6.4rem;
+    }
 
 
     .case-study .bottom-sectoion {
